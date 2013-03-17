@@ -1,5 +1,5 @@
 /*
-	Project: laba1-14
+	Project: ProcessString
 	Functional area: Project configuration
 	Author: Tyurin Dima
 	Contact data: tyurin94@gmail.com

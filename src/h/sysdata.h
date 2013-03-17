@@ -1,5 +1,5 @@
 /*
-	Project: laba1-14
+	Project: ProcessString
 	Functional area: auxiliary stuct and functions for state machine
 	Author: Tyurin Dima
 	Contact data: tyurin94@gmail.com
