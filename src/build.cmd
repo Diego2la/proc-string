@@ -2,9 +2,9 @@
 
 @if exist prg1.exe del prg1.exe
 
-rem #############################
-rem # makefile for ggc compiler #
-rem #############################
+rem ############################
+rem # compile project with ggc #
+rem ############################
 
 cd obj
 gcc S:\src\config.c    -c
