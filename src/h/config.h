@@ -1,9 +1,9 @@
 /*
-	Project: ProcessString
-	Functional area: Project configuration
-	Author: Tyurin Dima
-	Contact data: tyurin94@gmail.com
-	Creation: 22.02.2013
+   Project: ProcessString
+   Functional area: Project configuration
+   Author: Tyurin Dima
+   Contact data: tyurin94@gmail.com
+   Creation: 22.02.2013
 */
 
 #ifndef _CONFIG_INCLUDED_
@@ -31,15 +31,13 @@ extern const char* s_output_file_ext;
 #define MAX_ERROR_READ_SRTING_COUNT 3
 
 /* Program messages */
-#define MES_1_1  "Choose string source: 1 - keyboard, 2 - file."
-#define MES_1_2  "Enter string to process: "
-#define MES_1_3  "Incorrect input, try again, enter string:"
-#define MES_1_4  "Source file not found."
-#define MES_1_5  "Enter source filename: "
-#define MES_1_6  "Incorrect input, exited."
-#define MES_1_7  "Error writing to file."
-/* #define MES_1_8 Преобразованная строка. */ 
-#define MES_1_9  "Input string is incompatible with algorithm."
-#define MES_1_10 "Input text file is empty."
+#define MES_1_1 "Choose string source: 1 - keyboard, 2 - file."
+#define MES_1_2 "Enter string to process: "
+#define MES_1_3 "Incorrect input, try again, enter string:"
+#define MES_1_4 "Source file not found."
+#define MES_1_5 "Enter source filename: "
+#define MES_1_6 "Incorrect input, exited."
+#define MES_1_7 "Error writing to file."
+#define MES_1_8 "Input text file is empty."
 
 #endif /*_CONFIG_INCLUDED_*/

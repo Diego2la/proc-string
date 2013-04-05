@@ -1,9 +1,9 @@
 /*
-	Project: ProcessString
-	Functional area: Implimentaion logic of application as state machine
-	Author: Tyurin Dima
-	Contact data: tyurin94@gmail.com
-	Creation: 24.02.2013
+   Project: ProcessString
+   Functional area: Implimentaion logic of application as state machine
+   Author: Tyurin Dima
+   Contact data: tyurin94@gmail.com
+   Creation: 24.02.2013
 */
 
 #ifndef _ST_MACHINE_INCLUDED_
@@ -15,22 +15,22 @@
 /* all machine states */
 enum StCodes 
 {
-	ST_GET_ARGS           , 
-	ST_CHOOSE_STRING      , 
-	ST_ENTER_FILE_NAME    ,
-	ST_CHECK_ARGS         , 
-	ST_PREPARE_STRING     ,
-	ST_ENTER_STRING       ,
-	ST_PROCESS_STRING     ,
-	ST_TO_MUCH_ERRORS     ,
-	ST_SRC_FILE_NOT_FOUND ,
-	ST_WRITE_FILE         ,
-	ST_PRINT_RES          ,
-	ST_RETURN_1           ,
-	ST_RETURN_0           ,
-	ST_EXIT_CODE          ,	
-		
-	ST_COUNT
+   ST_GET_ARGS           , 
+   ST_CHOOSE_STRING      , 
+   ST_ENTER_FILE_NAME    ,
+   ST_CHECK_ARGS         , 
+   ST_PREPARE_STRING     ,
+   ST_ENTER_STRING       ,
+   ST_PROCESS_STRING     ,
+   ST_TO_MUCH_ERRORS     ,
+   ST_SRC_FILE_NOT_FOUND ,
+   ST_WRITE_FILE         ,
+   ST_PRINT_RES          ,
+   ST_RETURN_1           ,
+   ST_RETURN_0           ,
+   ST_EXIT_CODE          ,   
+      
+   ST_COUNT
 };
 const char* getStTitle(int state);
 
@@ -47,7 +47,7 @@ int choose_string      (struct SysData* data);
 int enter_file_name    (struct SysData* data);
 
 /* if arg not NULL this function check file extension
-	and trys to open file for reading */
+   and trys to open file for reading */
 int check_args         (struct SysData* data);
 
 /* read string from file and deleate bad symbols */
@@ -81,25 +81,25 @@ int exit_code          (struct SysData* data);
 /* functions return values */
 enum RetCodes
 { 
-	RET_DEFAULT  ,
-	RET_CONSOLE  ,
-	RET_FILE     ,
-	RET_TRUE     ,
-	RET_FALSE    ,
-	RET_SYM_1    ,
-	RET_SYM_2    ,
-	RET_RETURN_0 ,
-	RET_RETURN_1 ,
-	
-	RET_COUNT
+   RET_DEFAULT  ,
+   RET_CONSOLE  ,
+   RET_FILE     ,
+   RET_TRUE     ,
+   RET_FALSE    ,
+   RET_SYM_1    ,
+   RET_SYM_2    ,
+   RET_RETURN_0 ,
+   RET_RETURN_1 ,
+   
+   RET_COUNT
 };
 const char* getRetTitle(int ret);
 
 typedef int (*PMachineFunc)(struct SysData*);
 struct ActionCell
 {
-	int          state;
-	PMachineFunc action;
+   int          state;
+   PMachineFunc action;
 };
 
 struct Transition 

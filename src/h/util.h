@@ -1,9 +1,9 @@
 /*
-	Project: ProcessString
-	Functional area: Util macroses, inluding libs
-	Author: Tyurin Dima
-	Contact data: tyurin94@gmail.com
-	Creation: 22.02.2013
+   Project: ProcessString
+   Functional area: Util macroses, inluding libs
+   Author: Tyurin Dima
+   Contact data: tyurin94@gmail.com
+   Creation: 22.02.2013
 */
 
 #ifndef _UTIL_INCLUDED_
